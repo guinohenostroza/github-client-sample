@@ -32,7 +32,7 @@ namespace GitHubClient
             return JsonConvert.DeserializeObject<UserInformation>(gitHubResponse.Content);
         }
 
-        public boolean GitHubConnectorBAD(IRestClient client)
+        public Boolean GitHubConnectorBAD(IRestClient client)
         {
             this._restClient = client;
             this._restClient = client;
