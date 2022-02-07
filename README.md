@@ -114,3 +114,5 @@ You can check the [workflow file](.github/workflows/dotnet-core.yml) I've made u
 - SONAR_ORGANIZATION_KEY
 - SONAR_PROJECT_KEY
 - SONAR_TOKEN
+
+jersson
