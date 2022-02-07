@@ -32,30 +32,17 @@ namespace GitHubClient
             return JsonConvert.DeserializeObject<UserInformation>(gitHubResponse.Content);
         }
 
-        public Boolean GitHubConnectorBAD(IRestClient client)
+        public void CodeSmellSamples()
         {
-            this._restClient = client;
-            this._restClient = client;
-            this._restClient = client;
-            this._restClient = client;
-            this._restClient = client;
-            this._restClient = client;
-            this._restClient = client;
-            this._restClient = client;
-            this._restClient = client;
-            this._restClient = client;
-            this._restClient = client;
-            this._restClient = client;
-            this._restClient = client;
-            if(true)
-            {
-               this._restClient = client;
-               this._restClient = client;
-               this._restClient = client;
-            }
+           if (true) {
+                // ...
+           } if (true) {  // Noncompliant,  use   else if
+                //...
+           }
+          
+          var g1 = new Guid(); // Noncompliant - what's the intent? use  Guid.NewGuid();
 
-            this._restClient.BaseUrl = new Uri("https://api.github.com/");
-            return true;
+          Boolean flag = j.IsRunning ? "Running" : j.HasErrors ? "Failed" : "Succeeded";  // Noncompliant not nested
         }
 
         private void BugsSamples()
