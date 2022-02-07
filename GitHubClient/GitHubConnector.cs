@@ -31,7 +31,7 @@ namespace GitHubClient
             var gitHubResponse = getGitHubResponse(username);
             return JsonConvert.DeserializeObject<UserInformation>(gitHubResponse.Content);
         }
-
+/*
         public void CodeSmellSamples()
         {
            Boolean j = false;
@@ -70,12 +70,7 @@ namespace GitHubClient
                // never executed
             }
         }
-        private void VulnerabilitiesSamples(string typeName)
-        {
-            Type t = Type.GetType(typeName); // typeName is user-controlled
-            System.Xml.Serialization.XmlSerializer serializer = 
-                 new System.Xml.Serialization.XmlSerializer(t); // Noncompliant
-        }
+     
         private void SecurityHotSpotSamples(string user)
         {
            string username = "admin";
@@ -83,5 +78,6 @@ namespace GitHubClient
            string usernamePassword  = "user=admin&password=Admin123"; // Sensitive
            string url = "scheme://user:Admin123@domain.com"; // Sensitive
         }
+     */
     }
 }
