@@ -34,6 +34,9 @@ namespace GitHubClient
 
         public void CodeSmellSamples()
         {
+           Boolean j = false;
+           Boolean k = false;
+
            if (true) {
                 // ...
            } if (true) {  // Noncompliant,  use   else if
@@ -42,7 +45,7 @@ namespace GitHubClient
           
           var g1 = new Guid(); // Noncompliant - what's the intent? use  Guid.NewGuid();
 
-          Boolean flag = j.IsRunning ? "Running" : j.HasErrors ? "Failed" : "Succeeded";  // Noncompliant not nested
+          Boolean flag = j ? "Running" : k ? "Failed" : "Succeeded";  // Noncompliant not nested
         }
 
         private void BugsSamples()
