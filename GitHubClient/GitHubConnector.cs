@@ -70,10 +70,11 @@ namespace GitHubClient
                // never executed
             }
         }
-        private void VulnerabilitiesSamples(string user)
+        private void VulnerabilitiesSamples(string typeName)
         {
-            string query = "SELECT * FROM Users WHERE Username = '" + user + "'";
-            // Cifrados, carga de archivos, parseadores, Redireccionamientos HTTP, etc.
+            Type t = Type.GetType(typeName); // typeName is user-controlled
+            System.Xml.Serialization.XmlSerializer serializer = 
+                 new System.Xml.Serialization.XmlSerializer(t); // Noncompliant
         }
         private void SecurityHotSpotSamples(string user)
         {
