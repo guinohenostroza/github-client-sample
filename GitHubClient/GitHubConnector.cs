@@ -45,7 +45,7 @@ namespace GitHubClient
           
           var g1 = new Guid(); // Noncompliant - what's the intent? use  Guid.NewGuid();
 
-          Boolean flag = j ? "Running" : k ? "Failed" : "Succeeded";  // Noncompliant not nested
+          String result = j ? "Running" : k ? "Failed" : "Succeeded";  // Noncompliant not nested
         }
 
         private void BugsSamples()
