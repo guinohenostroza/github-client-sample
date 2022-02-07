@@ -42,8 +42,6 @@ namespace GitHubClient
            } if (true) {  // Noncompliant,  use   else if
                 //...
            }
-          
-          var g1 = new Guid(); // Noncompliant - what's the intent? use  Guid.NewGuid();
 
           String result = j ? "Running" : k ? "Failed" : "Succeeded";  // Noncompliant not nested
         }
@@ -71,14 +69,18 @@ namespace GitHubClient
             {
                // never executed
             }
-
-
-
-
-
-
-
         }
-
+        private void VulnerabilitiesSamples(string user)
+        {
+            string query = "SELECT * FROM Users WHERE Username = '" + user + "'";
+            // Cifrados, carga de archivos, parseadores, Redireccionamientos HTTP, etc.
+        }
+        private void SecurityHotSpotSamples(string user)
+        {
+           string username = "admin";
+           string password = "Admin123"; // Sensitive
+           string usernamePassword  = "user=admin&password=Admin123"; // Sensitive
+           string url = "scheme://user:Admin123@domain.com"; // Sensitive
+        }
     }
 }
