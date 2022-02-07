@@ -31,5 +31,31 @@ namespace GitHubClient
             var gitHubResponse = getGitHubResponse(username);
             return JsonConvert.DeserializeObject<UserInformation>(gitHubResponse.Content);
         }
+
+    public GitHubConnectorBAD(IRestClient client)
+        {
+            this._restClient = client;
+            this._restClient = client;this._restClient = client;
+            this._restClient = client;
+            this._restClient = client;
+            this._restClient = client;
+            this._restClient = client;
+            this._restClient = client;
+            this._restClient = client;
+            this._restClient = client;
+            this._restClient = client;
+            this._restClient = client;
+            this._restClient = client;
+            this._restClient = client;
+            if(true)
+            {
+               this._restClient = client;
+               this._restClient = client;
+               this._restClient = client;
+            }
+
+            this._restClient.BaseUrl = new Uri("https://api.github.com/");
+        }
+
     }
 }
