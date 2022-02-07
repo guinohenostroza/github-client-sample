@@ -31,7 +31,7 @@ namespace GitHubClient
             var gitHubResponse = getGitHubResponse(username);
             return JsonConvert.DeserializeObject<UserInformation>(gitHubResponse.Content);
         }
-/*
+
         public void CodeSmellSamples()
         {
            Boolean j = false;
@@ -78,6 +78,6 @@ namespace GitHubClient
            string usernamePassword  = "user=admin&password=Admin123"; // Sensitive
            string url = "scheme://user:Admin123@domain.com"; // Sensitive
         }
-     */
+     
     }
 }
