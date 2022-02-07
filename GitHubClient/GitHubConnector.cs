@@ -32,10 +32,10 @@ namespace GitHubClient
             return JsonConvert.DeserializeObject<UserInformation>(gitHubResponse.Content);
         }
 
-    public GitHubConnectorBAD(IRestClient client)
+        public boolean GitHubConnectorBAD(IRestClient client)
         {
             this._restClient = client;
-            this._restClient = client;this._restClient = client;
+            this._restClient = client;
             this._restClient = client;
             this._restClient = client;
             this._restClient = client;
@@ -55,6 +55,7 @@ namespace GitHubClient
             }
 
             this._restClient.BaseUrl = new Uri("https://api.github.com/");
+            return true;
         }
 
     }
